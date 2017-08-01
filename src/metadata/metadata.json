@@ -1,0 +1,774 @@
+{
+  "package": "FullContact",
+  "tagline": "FullContact API",
+  "description": "Build a clearer picture of your customers in minutes!",
+  "image": "http:\/\/logo.clearbit.com\/fullcontact.com",
+  "repo": "https:\/\/github.com\/RapidSoftwareSolutions\/Marketplace-FullContact-Package",
+  "keywords": [
+    "API",
+    "fulcontact",
+    "analytics"
+  ],
+  "accounts": {
+    "domain": "fullcontact.com",
+    "credentials": [
+      "apiKey"
+    ]
+  },
+  "blocks": [
+    {
+      "name": "lookupPersonByEmail",
+      "description": "Use the person method to request more information about a specific person by email.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "String",
+          "info": "The email address of the person being looked up.",
+          "required": true
+        },
+        {
+          "name": "style",
+          "type": "Select",
+          "options": [
+            "list",
+            "dictionary"
+          ],
+          "info": "The style parameter can be used to control the document structure returned. The default value, list, indicates that collections such as photos or socialProfiles should be grouped as arrays. An alternate value of dictionary is currently supported, which restructures collections as dictionaries.",
+          "required": false
+        },
+        {
+          "name": "webhookUrl",
+          "type": "String",
+          "info": "Callback url you'd like the data to be posted back to",
+          "required": false
+        },
+        {
+          "name": "webhookId",
+          "type": "String",
+          "info": "You can enter anything you want here, we will just pass it back in the response. This allows you to track the webhook if you wish.",
+          "required": false
+        },
+        {
+          "name": "confidence",
+          "type": "Select",
+          "options": [
+            "low",
+            "med",
+            "high",
+            "max"
+          ],
+          "info": "A confidence of max will return less data than usual, however, the data that is returned will have a higher likelihood of being correct. On the other hand, a confidence of low will return more data than usual, but makes the possibility of a mistake in that data more likely. med returns more data than high and less than low, with an error rate between the two.",
+          "required": false
+        },
+        {
+          "name": "macromeasures",
+          "type": "Boolean",
+          "info": "FullContact has partnered with Macromeasures to power Person API's ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving \"interests\" related information",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "lookupPersonByEmailMD5",
+      "description": "Use the person method to request more information about a specific person by email md5 hash.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "emailMD5",
+          "type": "String",
+          "info": "The email address md5 hash of the person being looked up.",
+          "required": true
+        },
+        {
+          "name": "style",
+          "type": "Select",
+          "options": [
+            "list",
+            "dictionary"
+          ],
+          "info": "The style parameter can be used to control the document structure returned. The default value, list, indicates that collections such as photos or socialProfiles should be grouped as arrays. An alternate value of dictionary is currently supported, which restructures collections as dictionaries.",
+          "required": false
+        },
+        {
+          "name": "webhookUrl",
+          "type": "String",
+          "info": "Callback url you'd like the data to be posted back to",
+          "required": false
+        },
+        {
+          "name": "webhookId",
+          "type": "String",
+          "info": "You can enter anything you want here, we will just pass it back in the response. This allows you to track the webhook if you wish.",
+          "required": false
+        },
+        {
+          "name": "confidence",
+          "type": "Select",
+          "options": [
+            "low",
+            "med",
+            "high",
+            "max"
+          ],
+          "info": "A confidence of max will return less data than usual, however, the data that is returned will have a higher likelihood of being correct. On the other hand, a confidence of low will return more data than usual, but makes the possibility of a mistake in that data more likely. med returns more data than high and less than low, with an error rate between the two.",
+          "required": false
+        },
+        {
+          "name": "macromeasures",
+          "type": "Boolean",
+          "info": "FullContact has partnered with Macromeasures to power Person API's ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving \"interests\" related information",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "lookupPersonByEmailSHA256",
+      "description": "Use the person method to request more information about a specific person by email sha256 hash.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "emailSHA256",
+          "type": "String",
+          "info": "The email address sha256 hash of the person being looked up.",
+          "required": true
+        },
+        {
+          "name": "style",
+          "type": "Select",
+          "options": [
+            "list",
+            "dictionary"
+          ],
+          "info": "The style parameter can be used to control the document structure returned. The default value, list, indicates that collections such as photos or socialProfiles should be grouped as arrays. An alternate value of dictionary is currently supported, which restructures collections as dictionaries.",
+          "required": false
+        },
+        {
+          "name": "webhookUrl",
+          "type": "String",
+          "info": "Callback url you'd like the data to be posted back to",
+          "required": false
+        },
+        {
+          "name": "webhookId",
+          "type": "String",
+          "info": "You can enter anything you want here, we will just pass it back in the response. This allows you to track the webhook if you wish.",
+          "required": false
+        },
+        {
+          "name": "confidence",
+          "type": "Select",
+          "options": [
+            "low",
+            "med",
+            "high",
+            "max"
+          ],
+          "info": "A confidence of max will return less data than usual, however, the data that is returned will have a higher likelihood of being correct. On the other hand, a confidence of low will return more data than usual, but makes the possibility of a mistake in that data more likely. med returns more data than high and less than low, with an error rate between the two.",
+          "required": false
+        },
+        {
+          "name": "macromeasures",
+          "type": "Boolean",
+          "info": "FullContact has partnered with Macromeasures to power Person API's ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving \"interests\" related information",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "lookupPersonByPhone",
+      "description": "Use the person method to request more information about a specific person by phone number.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "phone",
+          "type": "String",
+          "info": "The phone number of the person being looked up.",
+          "required": true
+        },
+        {
+          "name": "countryCode",
+          "type": "String",
+          "info": "This parameter must be passed when using non US/Canada based numbers. Use the ISO-3166 two-digit country code (Great Britain = GB). If not entered it defaults to US",
+          "required": false
+        },
+        {
+          "name": "style",
+          "type": "Select",
+          "options": [
+            "list",
+            "dictionary"
+          ],
+          "info": "The style parameter can be used to control the document structure returned. The default value, list, indicates that collections such as photos or socialProfiles should be grouped as arrays. An alternate value of dictionary is currently supported, which restructures collections as dictionaries.",
+          "required": false
+        },
+        {
+          "name": "webhookUrl",
+          "type": "String",
+          "info": "Callback url you'd like the data to be posted back to",
+          "required": false
+        },
+        {
+          "name": "webhookId",
+          "type": "String",
+          "info": "You can enter anything you want here, we will just pass it back in the response. This allows you to track the webhook if you wish.",
+          "required": false
+        },
+        {
+          "name": "confidence",
+          "type": "Select",
+          "options": [
+            "low",
+            "med",
+            "high",
+            "max"
+          ],
+          "info": "A confidence of max will return less data than usual, however, the data that is returned will have a higher likelihood of being correct. On the other hand, a confidence of low will return more data than usual, but makes the possibility of a mistake in that data more likely. med returns more data than high and less than low, with an error rate between the two.",
+          "required": false
+        },
+        {
+          "name": "macromeasures",
+          "type": "Boolean",
+          "info": "FullContact has partnered with Macromeasures to power Person API's ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving \"interests\" related information",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "lookupPersonByTwitter",
+      "description": "Use the person method to request more information about a specific person by twitter.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "twitter",
+          "type": "String",
+          "info": "The twitter of the person being looked up.",
+          "required": true
+        },
+        {
+          "name": "style",
+          "type": "Select",
+          "options": [
+            "list",
+            "dictionary"
+          ],
+          "info": "The style parameter can be used to control the document structure returned. The default value, list, indicates that collections such as photos or socialProfiles should be grouped as arrays. An alternate value of dictionary is currently supported, which restructures collections as dictionaries.",
+          "required": false
+        },
+        {
+          "name": "webhookUrl",
+          "type": "String",
+          "info": "Callback url you'd like the data to be posted back to",
+          "required": false
+        },
+        {
+          "name": "webhookId",
+          "type": "String",
+          "info": "You can enter anything you want here, we will just pass it back in the response. This allows you to track the webhook if you wish.",
+          "required": false
+        },
+        {
+          "name": "confidence",
+          "type": "Select",
+          "options": [
+            "low",
+            "med",
+            "high",
+            "max"
+          ],
+          "info": "A confidence of max will return less data than usual, however, the data that is returned will have a higher likelihood of being correct. On the other hand, a confidence of low will return more data than usual, but makes the possibility of a mistake in that data more likely. med returns more data than high and less than low, with an error rate between the two.",
+          "required": false
+        },
+        {
+          "name": "macromeasures",
+          "type": "Boolean",
+          "info": "FullContact has partnered with Macromeasures to power Person API's ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving \"interests\" related information",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "lookupCompanyByDomain",
+      "description": "Use this method to request more information about a specific company by domain.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "domain",
+          "type": "String",
+          "info": "The domain of the company being looked up.",
+          "required": true
+        },
+        {
+          "name": "keyPeople",
+          "type": "Boolean",
+          "info": "If true, a list of Executive and VP level employees at this company will be returned under the keyPeople field.",
+          "required": false
+        },
+        {
+          "name": "webhookUrl",
+          "type": "String",
+          "info": "Callback url you'd like the data to be posted back to",
+          "required": false
+        },
+        {
+          "name": "webhookId",
+          "type": "String",
+          "info": "You can enter anything you want here, we will just pass it back in the response. This allows you to track the webhook if you wish.",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "lookupCompanyByName",
+      "description": "Use this method to request more information about a specific company by name.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "companyName",
+          "type": "String",
+          "info": "The name of the company being looked up.",
+          "required": true
+        },
+        {
+          "name": "sort",
+          "type": "Select",
+          "options": [
+            "traffic",
+            "relevance",
+            "employees"
+          ],
+          "info": "Controls how results will be sorted.",
+          "required": false
+        },
+        {
+          "name": "location",
+          "type": "String",
+          "info": "If supplied, only companies matching given location will be returned. The location is a general location where one can include any combination of locality, region or country as input.",
+          "required": false
+        },
+        {
+          "name": "locality",
+          "type": "String",
+          "info": "If supplied, only companies matching given locality/city will be returned.",
+          "required": false
+        },
+        {
+          "name": "region",
+          "type": "String",
+          "info": "If supplied, only companies matching given region/state will be returned.",
+          "required": false
+        },
+        {
+          "name": "country",
+          "type": "String",
+          "info": "If supplied, only companies matching given country will be returned.",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "uploadCard",
+      "description": "Use the Upload Card method to submit front and back photos of a business card for processing.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "cardFront",
+          "type": "File",
+          "info": "Front of the card",
+          "required": true
+        },
+        {
+          "name": "cardBack",
+          "type": "File",
+          "info": "Back of the card",
+          "required": false
+        },
+        {
+          "name": "webhookUrl",
+          "type": "String",
+          "info": "Callback url you'd like the data to be posted back to",
+          "required": false
+        },
+        {
+          "name": "verified",
+          "type": "Select",
+          "options": [
+            "low",
+            "medium"
+          ],
+          "info": "Used to specify the quality of transcription. Calls to verified=medium require a FullContact premium account.",
+          "required": false
+        },
+        {
+          "name": "returnedData",
+          "type": "Select",
+          "options": [
+            "verifiedOnly"
+          ],
+          "info": "A response can contain verified and unverified data, this parameter can be used to exclude unverified data from being returned in the response.",
+          "required": false
+        },
+        {
+          "name": "casing",
+          "type": "Select",
+          "options": [
+            "default",
+            "uppercase",
+            "lowercase",
+            "titlecase"
+          ],
+          "info": "Card Reader can alter the casing of certain fields in the final results.",
+          "required": false
+        },
+        {
+          "name": "sandbox",
+          "type": "Select",
+          "options": [
+            "PROCESSING",
+            "CALLBACK_MADE",
+            "CALLBACK_FAILED",
+            "CALLBACK_MADE_NOT_PROCESSABLE",
+            "CALLBACK_FAILED_NOT_PROCESSABLE"
+          ],
+          "info": "Card Reader Sandbox is a free, quick response mode for testing and development.",
+          "required": false
+        },
+        {
+          "name": "URID",
+          "type": "String",
+          "info": "If you pass in the URID parameter, we will make sure that the request you are referring to by this id is only processed once.",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSingleRequest",
+      "description": "Use the view single request method to view a specific transcription",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "requestId",
+          "type": "String",
+          "info": "ID of the request",
+          "required": true
+        },
+        {
+          "name": "returnedData",
+          "type": "Select",
+          "options": [
+            "verifiedOnly"
+          ],
+          "info": "A response can contain verified and unverified data, this parameter can be used to exclude unverified data from being returned in the response.",
+          "required": false
+        },
+        {
+          "name": "diagnostics",
+          "type": "Boolean",
+          "info": "With this parameter you can see what the response from your own server was when we sent out your webhook.",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getRequests",
+      "description": "Use the view requests method to view a paged history of your transcriptions.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "page",
+          "type": "Number",
+          "info": "Used to page through the results. If not specified, it defaults to the first page (0).",
+          "required": false
+        },
+        {
+          "name": "returnedData",
+          "type": "Select",
+          "options": [
+            "verifiedOnly"
+          ],
+          "info": "A response can contain verified and unverified data, this parameter can be used to exclude unverified data from being returned in the response.",
+          "required": false
+        },
+        {
+          "name": "diagnostics",
+          "type": "Boolean",
+          "info": "With this parameter you can see what the response from your own server was when we sent out your webhook.",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "verifySingleEmail",
+      "description": "Provides validity of an email.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "String",
+          "info": "The email address to verify",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "verifyEmails",
+      "description": "Provides validity of several emails.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "emails",
+          "type": "List",
+          "structure": {
+            "name": "email",
+            "type": "String",
+            "info": "Single email to verify"
+          },
+          "info": "The email addresses to verify",
+          "required": true
+        },
+        {
+          "name": "webhookUrl",
+          "type": "String",
+          "info": "Callback url you'd like the data to be posted back to",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getVerifyEmailsStatus",
+      "description": "Get the state and result of a previous batch request",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "verifyId",
+          "type": "String",
+          "info": "ID of the batch request",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getAccountStats",
+      "description": "The Account Stats endpoint allows you to query FullContact to view your API account usage for the current month or a previous month that you can define using the optional period parameter.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "Api key received from FullContact",
+          "required": true
+        },
+        {
+          "name": "period",
+          "type": "DatePicker",
+          "info": "You can define the month that you want to see usage stats for by using the period parameter.",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    }
+  ]
+}
