@@ -1,4 +1,4 @@
-[![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/FullContact/functions?utm_source=RapidAPIGitHub_FullContactFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
+[![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.io/package/FullContact/functions?utm_source=RapidAPIGitHub_FullContactFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
 
 # FullContact Package
 Build a clearer picture of your customers in minutes!
@@ -14,9 +14,9 @@ Build a clearer picture of your customers in minutes!
  
  Please use SDK to test this feature.
  
- 0. Go to [RapidAPI](http://rapidapi.com)
+ 0. Go to [RapidAPI](http://rapidapi.io)
  1. Log in or create an account
- 2. Go to [My apps](https://dashboard.rapidapi.com/projects)
+ 2. Go to [My apps](https://dashboard.rapidapi.io/projects)
  3. Add new project with projectName to get your project Key
  
  | Field      | Type       | Description
@@ -40,7 +40,7 @@ Use the person method to request more information about a specific person by ema
 
 You can use our service as webhookUrl: 
    ```
-   https://webhooks.rapidapi.com/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
+   https://webhooks.rapidapi.io/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
    ```
 
 | Field        | Type       | Description
@@ -58,7 +58,7 @@ Use the person method to request more information about a specific person by ema
 
 You can use our service as webhookUrl: 
    ```
-   https://webhooks.rapidapi.com/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
+   https://webhooks.rapidapi.io/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
  ```
 
 | Field        | Type       | Description
@@ -75,7 +75,7 @@ You can use our service as webhookUrl:
 Use the person method to request more information about a specific person by email sha256 hash.
 You can use our service as webhookUrl: 
    ```
-   https://webhooks.rapidapi.com/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
+   https://webhooks.rapidapi.io/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
  ```
 
 
@@ -93,7 +93,7 @@ You can use our service as webhookUrl:
 Use the person method to request more information about a specific person by phone number.
 You can use our service as webhookUrl: 
    ```
-   https://webhooks.rapidapi.com/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
+   https://webhooks.rapidapi.io/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
  ```
 
 
@@ -112,7 +112,7 @@ You can use our service as webhookUrl:
 Use the person method to request more information about a specific person by twitter.
 You can use our service as webhookUrl: 
    ```
-   https://webhooks.rapidapi.com/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
+   https://webhooks.rapidapi.io/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
  ```
 
 
@@ -130,7 +130,7 @@ You can use our service as webhookUrl:
 Use this method to request more information about a specific company by domain.
 You can use our service as webhookUrl: 
    ```
-   https://webhooks.rapidapi.com/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
+   https://webhooks.rapidapi.io/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
  ```
 
 
@@ -159,7 +159,7 @@ Use this method to request more information about a specific company by name.
 Use the Upload Card method to submit front and back photos of a business card for processing.
 You can use our service as webhookUrl: 
    ```
-   https://webhooks.rapidapi.com/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
+   https://webhooks.rapidapi.io/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
  ```
 
 
@@ -207,7 +207,7 @@ Provides validity of an email.
 Provides validity of several emails.
 You can use our service as webhookUrl: 
    ```
-   https://webhooks.rapidapi.com/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
+   https://webhooks.rapidapi.io/api/message/FullContact/webhookEvent/{projectName}/{projectKey} * see credentials description above
  ```
 
 
