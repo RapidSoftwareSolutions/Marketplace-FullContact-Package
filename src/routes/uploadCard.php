@@ -21,6 +21,7 @@ $app->post('/api/FullContact/uploadCard', function ($request, $response, $args) 
 
     $params = [
         'apiKey' => 'apiKey',
+        'responseCode'=> '202',
         'front' => 'cardFront',
         'back' => 'cardBack',
         'verified'=> 'verified',
