@@ -15,6 +15,26 @@
       "apiKey"
     ]
   },
+  "events": [
+    {
+      "name": "webhookEvent",
+      "description": "This method is called every time a FullContact webhook event occurs",
+      "payload":{
+        "environment": "TEST"
+      },
+      "steps": [
+        "You can add a webhook link when you use methods which support it"
+      ],
+      "args": [
+        {
+          "name": "token",
+          "type": "string",
+          "info": "Token sent on each message",
+          "required": true
+        }
+      ]
+    }
+  ],
   "blocks": [
     {
       "name": "lookupPersonByEmail",
