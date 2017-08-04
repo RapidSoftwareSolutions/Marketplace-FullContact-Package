@@ -58,14 +58,14 @@
           "options": [
             "list",
             "dictionary"
-          ],
+          ],`
           "info": "The style parameter can be used to control the document structure returned. The default value, list, indicates that collections such as photos or socialProfiles should be grouped as arrays. An alternate value of dictionary is currently supported, which restructures collections as dictionaries.",
           "required": false
         },
         {
           "name": "webhookUrl",
           "type": "String",
-          "info": "Callback url you'd like the data to be posted back to",
+          "info": "Callback url you`d like the data to be posted back to",
           "required": false
         },
         {
@@ -133,7 +133,7 @@
         {
           "name": "webhookUrl",
           "type": "String",
-          "info": "Callback url you'd like the data to be posted back to",
+          "info": "Callback url you`d like the data to be posted back to",
           "required": false
         },
         {
@@ -201,7 +201,7 @@
         {
           "name": "webhookUrl",
           "type": "String",
-          "info": "Callback url you'd like the data to be posted back to",
+          "info": "Callback url you`d like the data to be posted back to",
           "required": false
         },
         {
@@ -275,7 +275,7 @@
         {
           "name": "webhookUrl",
           "type": "String",
-          "info": "Callback url you'd like the data to be posted back to",
+          "info": "Callback url you`d like the data to be posted back to",
           "required": false
         },
         {
@@ -343,7 +343,7 @@
         {
           "name": "webhookUrl",
           "type": "String",
-          "info": "Callback url you'd like the data to be posted back to",
+          "info": "Callback url you`d like the data to be posted back to",
           "required": false
         },
         {
@@ -407,7 +407,7 @@
         {
           "name": "webhookUrl",
           "type": "String",
-          "info": "Callback url you'd like the data to be posted back to",
+          "info": "Callback url you`d like the data to be posted back to",
           "required": false
         },
         {
@@ -516,7 +516,7 @@
         {
           "name": "webhookUrl",
           "type": "String",
-          "info": "Callback url you'd like the data to be posted back to",
+          "info": "Callback url you`d like the data to be posted back to",
           "required": false
         },
         {
@@ -719,7 +719,7 @@
         {
           "name": "webhookUrl",
           "type": "String",
-          "info": "Callback url you'd like the data to be posted back to",
+          "info": "Callback url you`d like the data to be posted back to",
           "required": false
         }
       ],

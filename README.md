@@ -51,7 +51,7 @@ You can use our service as webhookUrl:
 | webhookUrl   | String     | Callback url you'd like the data to be posted back to
 | webhookId    | String     | You can enter anything you want here, we will just pass it back in the response. This allows you to track the webhook if you wish.
 | confidence   | Select     | A confidence of max will return less data than usual, however, the data that is returned will have a higher likelihood of being correct. On the other hand, a confidence of low will return more data than usual, but makes the possibility of a mistake in that data more likely. med returns more data than high and less than low, with an error rate between the two.
-| macromeasures| Boolean    | FullContact has partnered with Macromeasures to power Person API's ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving "interests" related information
+| macromeasures| Boolean    | FullContact has partnered with Macromeasures to power Person API`s ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving "interests" related information
 
 ## FullContact.lookupPersonByEmailMD5
 Use the person method to request more information about a specific person by email md5 hash.
@@ -69,7 +69,7 @@ You can use our service as webhookUrl:
 | webhookUrl   | String     | Callback url you'd like the data to be posted back to
 | webhookId    | String     | You can enter anything you want here, we will just pass it back in the response. This allows you to track the webhook if you wish.
 | confidence   | Select     | A confidence of max will return less data than usual, however, the data that is returned will have a higher likelihood of being correct. On the other hand, a confidence of low will return more data than usual, but makes the possibility of a mistake in that data more likely. med returns more data than high and less than low, with an error rate between the two.
-| macromeasures| Boolean    | FullContact has partnered with Macromeasures to power Person API's ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving "interests" related information
+| macromeasures| Boolean    | FullContact has partnered with Macromeasures to power Person API`s ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving "interests" related information
 
 ## FullContact.lookupPersonByEmailSHA256
 Use the person method to request more information about a specific person by email sha256 hash.
@@ -87,7 +87,7 @@ You can use our service as webhookUrl:
 | webhookUrl   | String     | Callback url you'd like the data to be posted back to
 | webhookId    | String     | You can enter anything you want here, we will just pass it back in the response. This allows you to track the webhook if you wish.
 | confidence   | Select     | A confidence of max will return less data than usual, however, the data that is returned will have a higher likelihood of being correct. On the other hand, a confidence of low will return more data than usual, but makes the possibility of a mistake in that data more likely. med returns more data than high and less than low, with an error rate between the two.
-| macromeasures| Boolean    | FullContact has partnered with Macromeasures to power Person API's ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving "interests" related information
+| macromeasures| Boolean    | FullContact has partnered with Macromeasures to power Person API`s ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving "interests" related information
 
 ## FullContact.lookupPersonByPhone
 Use the person method to request more information about a specific person by phone number.
@@ -106,7 +106,7 @@ You can use our service as webhookUrl:
 | webhookUrl   | String     | Callback url you'd like the data to be posted back to
 | webhookId    | String     | You can enter anything you want here, we will just pass it back in the response. This allows you to track the webhook if you wish.
 | confidence   | Select     | A confidence of max will return less data than usual, however, the data that is returned will have a higher likelihood of being correct. On the other hand, a confidence of low will return more data than usual, but makes the possibility of a mistake in that data more likely. med returns more data than high and less than low, with an error rate between the two.
-| macromeasures| Boolean    | FullContact has partnered with Macromeasures to power Person API's ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving "interests" related information
+| macromeasures| Boolean    | FullContact has partnered with Macromeasures to power Person API`s ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving "interests" related information
 
 ## FullContact.lookupPersonByTwitter
 Use the person method to request more information about a specific person by twitter.
@@ -124,7 +124,7 @@ You can use our service as webhookUrl:
 | webhookUrl   | String     | Callback url you'd like the data to be posted back to
 | webhookId    | String     | You can enter anything you want here, we will just pass it back in the response. This allows you to track the webhook if you wish.
 | confidence   | Select     | A confidence of max will return less data than usual, however, the data that is returned will have a higher likelihood of being correct. On the other hand, a confidence of low will return more data than usual, but makes the possibility of a mistake in that data more likely. med returns more data than high and less than low, with an error rate between the two.
-| macromeasures| Boolean    | FullContact has partnered with Macromeasures to power Person API's ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving "interests" related information
+| macromeasures| Boolean    | FullContact has partnered with Macromeasures to power Person API`s ability for providing affinity data about individuals! With this premium feature, you will begin to untap the potential of being able to better understand the people behind your queries by receiving "interests" related information
 
 ## FullContact.lookupCompanyByDomain
 Use this method to request more information about a specific company by domain.
