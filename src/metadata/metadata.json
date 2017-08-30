@@ -65,7 +65,7 @@
         {
           "name": "webhookUrl",
           "type": "String",
-          "info": "Callback url you`d like the data to be posted back to",
+          "info": "Callback url you would like the data to be posted back to",
           "required": false
         },
         {
